@@ -1,0 +1,114 @@
+* {  padding: 0;  margin: 0;font-size: 20px;   
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: lighter;
+}
+html  {  word-break: break-all;}
+body  {  background-color: #cccccc;    height:100%;	overflow-y:auto;}
+table {  border-collapse: collapse;table-layout: fixed;}
+
+div      {  background-color: #ccd6c9  ; white-space:pre-line;  }
+p  {  display:block;  white-space:pre     ;list-style-type: none;    margin-left:0;  padding-left:40px;}
+h10{  display:block ; white-space:pre-line;list-style-type: none;    margin-left:0;  padding-left:40px;}
+pre,span,code {  background-color: #aaaaaa ;  margin: 30px 30px 30px 30px;}
+pre      {  width:70%;}
+li       {  font-weight: normal;white-space: pre;}
+ul  ,ol     {  
+    list-style-type: none;
+    margin-left:0;
+    padding-left:40px;
+}
+
+img{margin-left: 25px;}
+h1{display: flex;justify-content: center; align-items: center; background-color:#5342f4;color:#cfc9fc; font-size:xx-large }
+h2,.header{display: flex;justify-content: center; align-items: center; background-color:#c7d5ed;font-size: x-large;
+  border-color:black;
+  border-style: solid;  border-width: 1px;line-height: 40px;}
+h3{display: block;font-weight:bolder;  width:50%;  text-align: center;  margin-left:25px; background-color:lightblue; color:darkblue;
+  padding: 10px ;  border-color:black;  border-style: solid;  border-width: 1px; }
+a:link {  color: rgb(23, 12, 114);}/* unvisited link */
+a:visited {  color: purple;}/* visited link */
+a:hover {  color: rgb(190, 97, 190);text-decoration: underline;font-size: 22px;}/* mouse over link */
+a { color: rgb(23, 12, 114); text-decoration: none;  }
+a:active {  color: black;}
+
+
+b{  background-color: #d7d7d7;  border: 1px solid #a5a3ab;  padding-left: 5PX;  padding-right: 5PX;  font-weight:bolder;}
+
+/******************************************* Classes **********************************************/
+th{margin: 0 auto;}
+/* utils : */
+.tableColored { border: 1px solid #444444; background-color: #EEEEEE; width:2000px; text-align: left; border-collapse: collapse;}
+.tableColored td, table th {  border: 1px solid #444444; padding: 3px 2px;}
+.tableColored tbody td { margin-left: 3px; font-size: 16px;}
+.tableColored tr:nth-child(even) {  background: #ccddFF;}
+.tableColored thead th {  font-size: 16px;  font-weight: bold;   border: 2px solid ;border-color:#444444;}
+.tableColored thead th:first-child {  border-left: none;}
+.tableColored th {padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #29559b; color: white;}
+
+.CenterMe-H {display: flex;  justify-content: center;}
+.CenterChildren-H {  text-align: center;}
+.CenterMe-V-1Line{  padding-top: 30px;  padding-bottom: 30px;}
+.CenterMe-V-multiLine {  display: flex;  justify-content: center;  flex-direction: column;}
+.CenterMe-V-multiLine2{vertical-align: middle;}
+.Desk { width: 1600px;}
+.Mobile {   width: 100%;}
+.bordered{  border: 1px solid #333333;}
+.padding5{padding:5px;}
+.padding10{padding:10px;}
+.indent{margin-left: 10px;}
+.top  {   display: inline-block;vertical-align:top; }
+.textCenter{text-align: center;}
+.font25x{font-size: 25px;}
+.width100{width:100%}
+.colorWhite{color:white;}
+/*------------------------------- */
+.pageHeader{
+  font-size: xx-large;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color:#5342f4;
+  color:#cfc9fc;
+}
+.topBand{
+  background-color:#140a6d;
+  color:#cfc9fc;
+  font-size: small;
+}
+.header {
+    background-color: #666;
+    padding-left: 10px;
+    padding-right: 15px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    width:80%;
+
+}
+.inALine{
+  display:inline-block;
+  border-width:1px;
+  border-style:solid;
+}
+.in_a_Line{
+  display:flex;
+  border-width:1px;
+  border-style:solid;
+}
+.FlexBox{
+  display:flex;
+  flex-direction:row;
+}
+.ClimateCol{	width:480px;}
+.gridContainer {
+  display: grid;
+  /*  grid-template-columns: auto auto auto auto;*/
+  grid-template-columns: 250px 250px 250px 250px;
+ 
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
