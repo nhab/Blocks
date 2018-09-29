@@ -18,27 +18,26 @@ options[0]={title:"What is Blocks",
 body:`Block is a collection of a few functions and classes to
 Draw a Blocks of concepts.Each Concept has a header and a 
 description body.it may have one or more code and image sections .`,codetype:"javascript",parent:objConcepts
-}
+};
 options[1]={title:"A sample of usage:",
-body:``,`<head>
-  <meta charset="UTF-8">  
-    <link rel="stylesheet" href="assets/css/block.css">
-    <script src="assets/js/block.js"></script>
-    <link rel="stylesheet" href="libs/highlight/androidstudio2.css">
-    <script src="libs/highlight/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-</head>
-<body>
-  <script>
+code:`&lt;head>
+  &lt;meta charset="UTF-8">  
+    &lt;link rel="stylesheet" href="assets/css/block.css">
+    &lt;script src="assets/js/block.js">&lt;/script>
+    &lt;link rel="stylesheet" href="libs/highlight/androidstudio2.css">
+    &lt;script src="libs/highlight/highlight.pack.js">&lt;/script>
+    &lt;script>hljs.initHighlightingOnLoad();&lt;/script>
+&lt;/head>
+&lt;body>
+  &lt;script>
 var options={title:"What is Blocks",
-body:'Block is a collection of a ..',codetype:"javascript",parent:objConcepts
-}`);
-    BlockN(options);
-    
-  </script>
-</body>
-`,
-codetype:"html",parent:objConcepts,codeOnRight:true
+body:'Block is a collection of a ..',parent:objConcepts
+}
+BlockN(options);
+  &lt;/script>
+&lt;/body>
+`,   
+codetype:"html",parent:objConcepts
 };
 for(i=0;i<=1;i++)
     BlockN(options[i]);
