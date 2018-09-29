@@ -1,2 +1,2 @@
 # Blocks
-A mini Framework to write an Efficient tutorial page 
+A Javascript mini Framework to write an Efficient tutorial page 
