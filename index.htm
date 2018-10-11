@@ -14,12 +14,13 @@ var objConcepts=BlockGroup("Blocks Tutorial in Blocks");
 // Block(options)
 // title,body,code,codetype,widt,hei,imageSrc=null,padding="5",imagWidth="100%",parent=document,imagesOnRight=false,codeOnRight=false)
 var options=[];
-options[0]={title:"What is Blocks",
+var  i=0;
+options[i++]={title:"What is Blocks",
 body:`Block is a collection of a few functions and classes 
 to express a Blocks of concepts.Each Concept has a header and a 
 description body.it may have one or more code and image sections .`,codetype:"javascript",parent:objConcepts
 };
-options[1]={title:"A sample of usage:",
+options[i++]={title:"A sample of usage:",
 code:`&lt;head>
   &lt;meta charset="UTF-8">  
     &lt;link rel="stylesheet" href="assets/css/block.css">
@@ -40,8 +41,19 @@ code:`&lt;head>
 `,   
 codetype:"html",parent:objConcepts
 };
-for(i=0;i<=1;i++)
-    Block(options[i]);
+options[i++]={title:"Use of Html tags to format the block",
+body:`For Example:
+MongoDB’s equivalents of SQL terms
+<table style='border-collapse: collapse;'>
+  <tr bgcolor="#DDEEEE" style="font-weight:bolder"><td>SQL</td><td>MongoDB</td> </tr>
+  <tr><td>database</td><td>database</td> </tr>
+  <tr><td>table</td><td>collection</td> </tr>
+  <tr><td>row</td><td>document</td> </tr>
+  <tr><td>column</td><td>field</td> </tr>
+</table>   `,parent:objConcepts};
+
+
+ options=RenderBlocks(options);
  
  </script>
  
