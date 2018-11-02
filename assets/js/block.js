@@ -71,7 +71,8 @@ function Block(...a)
         var divBody = document.createElement("div");
         divBody.setAttribute('id', bodyID);
         divBody.setAttribute("class",'blockBody');
-        divBody.innerHTML=options.body;
+        debugger;
+        divBody.innerHTML=options.body.replace("<","&lt;");
         dvContainer.appendChild(divBody);
     }
 
@@ -88,9 +89,8 @@ function Block(...a)
         divPre.setAttribute("style",sStyle+";background-color:black;color:cyan;");
         var divCode = document.createElement("code");
         divCode.setAttribute("style",'overflow: auto;background-color:black;color:cyan;');
-        debugger;
         //divCode.setAttribute("class",options.codetype);
-        divCode.innerHTML= options.code;
+        divCode.innerHTML= options.code.replace("<","&lt;");
         divPre.appendChild(divCode);
         dvContainer.appendChild(divPre);
     }  
@@ -102,7 +102,7 @@ function Block(...a)
             divPre.setAttribute("style",sStyle);
             var divCode = document.createElement("code");
             divCode.setAttribute("style",'overflow: auto;');
-            divCode.innerHTML= options.code;
+            divCode.innerHTML= options.code.replace("<","&lt;");
             divPre.appendChild(divCode);
             dvContainer.appendChild(divPre);
         }
@@ -505,7 +505,8 @@ class BlockFrame{
             var divBody = document.createElement("div");
             divBody.setAttribute('id', bodyID);
             divBody.setAttribute("class",'blockBody');
-            divBody.innerHTML=options.body;
+            debugger;   
+            divBody.innerHTML=options.body.replace("<","&lt;");;
             dvContainer.appendChild(divBody);
         }
 
@@ -525,7 +526,7 @@ class BlockFrame{
             var divCode = document.createElement("code");
             divCode.setAttribute("style",'overflow: auto;');
             divCode.setAttribute("class",options.codetype);
-            divCode.innerHTML= options.code;
+            divCode.innerHTML= options.code.replace("<","&lt;");
             divPre.appendChild(divCode);
             dvContainer.appendChild(divPre);
         }  
@@ -537,7 +538,7 @@ class BlockFrame{
                 divPre.setAttribute("style",sStyle);
                 var divCode = document.createElement("code");
                 divCode.setAttribute("style",'overflow: auto;');
-                divCode.innerHTML= options.code;
+                divCode.innerHTML= options.code.replace("<","&lt;");
                 divPre.appendChild(divCode);
                 dvContainer.appendChild(divPre);
             }
@@ -693,12 +694,20 @@ class BlockFrame{
     static  RenderGrouped(options)
     {    
         var i,j;
-        debugger;
-        for(i=0;i<options.length;i++)
+        try{
+            for(i=0;i<options.length;i++)
+            {
+                var o=BlockGroup(options[i].GrpTitle);
+                for(j=0;j<options[i].items.length;j++)
+                {
+                    debugger;
+                    options[i].items[j].parent=o;
+                    Block(options[i].items[j]);
+                }
+            }
+        }catch( ex)
         {
-            BlockGroup(options[i].GrpTitle);
-            for(j=0;j<options[i].items.length;j++)
-                Block(options[i].items[j]);
+            debugger;
         }
         options=[];
         return options;
