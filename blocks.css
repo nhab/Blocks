@@ -1,0 +1,63 @@
+	*{
+			font-size:14px;
+			font-family: Consolas,Droid Sans Mono,Noto Sans Mono;
+			line-height: 1.8;
+	}
+
+	h2{
+		font-size:22px;
+		font-weight: 900;
+		background-color:#dddddd;
+		border: 1px solid #777777;
+		padding :7px;
+	}
+	h3{
+		font-size:18px;
+		font-weight: 900;
+		background-color:#eeeeee;
+		padding: 2px 5px 2px 5px;
+		border-color:#dddddd;
+		border-style: solid;
+		border-width:1px;
+		display: inline;
+	}	
+	h4{
+		font-size:16px;
+		font-weight: 900;
+		background-color:#eeeeee;
+		padding: 3px;
+		
+		display: inline;
+	}	
+	b{
+		font-size:14px;
+		font-weight: 900;
+		background-color:#eeeeee;
+		padding: 3px;
+		
+		display: inline;
+	}
+	p,div{
+			white-space: pre-line;
+			margin-left: 7px;
+			text-indent:5%;
+	}
+	div p{
+		white-space: pre-line;
+		margin-left: 34px;
+		text-indent:10%;
+	}
+	code{
+    	display: block;
+        white-space: pre-wrap;
+    	background-color:#000033;
+        color:#eeeeff;
+        
+    }
+	.f{
+		direction:rtl;
+		font-family: vazirmatn,IranSans,b-nazanin,tahoma;
+	}
+	.toggleButton{
+		font-size:20px;margin-right:5px;vertical-align: middle;
+	}
