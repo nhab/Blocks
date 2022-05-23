@@ -1,12 +1,14 @@
 # Blocks
-A Javascript mini Framework to make Efficient tutorials
+A Javascript mini Framework to make Efficient, more readable tutorial documents by using simple html tags.
 
-<!--a href='https://nhab.github.com/Blocks'>Blocks website</a>
+Add 	blocks.css" and "blocks.js" to your html file,just like sample.htm file above.
 
-<a href="https://nhab.github.io/Blocks/samples/reactjs.htm">Sample 1: React.JS tutorial</a>
+and then following feature will be addd to your html:
 
-<a href="https://nhab.github.io/Blocks/samples/scrumGrouped.htm">Sample 2:Scrum tutorial</a>
+-Create <b>Foldable hierarchial documents</b>:
+  folding and unfolding texts: a toggle button can be added inside any tag( h2 for example),and you can toggle its sibeling element.
+  you can create a heierarchial document by using this simple feature.
 
-<a href="https://nhab.github.io/Blocks/samples/symfony.htm">sample 3:symfony</a>
-
-<a href="https://nhab.github.io/Blocks/samples/immi.htm">sample 4: tabular data </a-->
+- <b>More readable tags</b>:
+  for example h2 tags will have border and backcolor to make the document more readable
+  
