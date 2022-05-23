@@ -5,7 +5,7 @@ Add 	blocks.css" and "blocks.js" to your html file,just like sample.htm file abo
 
 and then following feature will be addd to your html:
 
--Create <b>Foldable hierarchial documents</b>:
+- Create <b>Foldable hierarchial documents</b>:
   folding and unfolding texts: a toggle button can be added inside any tag( h2 for example),and you can toggle its sibeling element.
   you can create a heierarchial document by using this simple feature.
 
