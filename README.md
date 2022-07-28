@@ -1,5 +1,5 @@
 # Blocks
-A Javascript mini Framework to make Efficient, more readable tutorial documents by using simple html tags.
+A Javascript mini Framework to make Efficient, more readable tutorials easily by using simple html tags.
 
 Add 	blocks.css" and "blocks.js" to your html file,just like sample.htm file above.
 
