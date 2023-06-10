@@ -140,11 +140,10 @@ bord{
 }
 
 b{
-	font-size:1.2em;
+	font-size:1.3em;
 	font-weight: 900;
 	background-color:#dddddd;
-	padding-left: 5PX;  
-	padding-right: 5PX;
+	padding-left: 5PX;  padding-right: 5PX;
 	display: inline;
 }
 i{
@@ -163,14 +162,12 @@ samp{
 
 code {
    /* display: inline-block;*/
-	white-space:unsset;/*pre-wrap;*/
+	white-space:unsset;
      overflow-wrap: nowrap;
     text-indent: 1%;
-    font-family: monospace;
+     font-family: monospace;
     padding-right:5px;
     text-indent: 1%;
-    /*background-color:#000033;
-	color:#eeeeff;*/
 }
 pre {
 	white-space: pre-wrap;       /* css-3 */
