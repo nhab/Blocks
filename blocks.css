@@ -179,6 +179,15 @@ pre {
 	font-family: monospace;
     white-space: pre;
 }
+
+mark{
+   background-color:#eeeeee;
+   padding: 2px 2px 2px 2px ;
+   border: 1px solid darkblue;
+  font-weight:700px;
+	line-height: 1.7em;
+}
+
 .rtl{
     direction:rtl;
 }
@@ -246,12 +255,7 @@ color:#00FFFF;
     padding: 0.5em;
 }
 
-mark{
-   background-color:#eeeeee;
-   padding: 2px 2px 2px 2px ;
-   border: 1px solid darkblue;
-  font-weight:700px;
-}
+
 
 .box     { display:inline-block;width:100%;max-width: 90%;}
 .box50   { display:inline-block;width:100%;max-width: 50%;}
