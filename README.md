@@ -10,21 +10,26 @@ then you can continue to dig into next level.
 Add 	blocks.css" and "blocks.js" to your html file,just like sample.htm file above.
 
 or you use cdn like this
+```html
 < link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/nhab/blocks@latest/blocks.css'>
+
 < script src='https://cdn.jsdelivr.net/gh/nhab/blocks@latest/blocks.js'></script >
+```
 
 ## Add heirarcy to body onload
 Then set a blocks.js function to onload of the body tag.for example to make a 2 level hierarcy use this:
+```html 
 <code>
 <body onload='AddToggleButtonsToH2andH3();ReplaceLtGt();hljs.highlightAll();'>
-  </code>
+</code>
+```
 
 ## Adding fold/unfold button:
-  
+```html  
 <button onclick="toggleAll(this);" >-</button>
-  
-## Make content:
-  after each heading,it should be just one div element.
+ ```
+## Make the content:
+  After each heading,it should be just one div element.
   
 # Example
 https://nhab.github.io/programming/py/py.htm
