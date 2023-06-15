@@ -1,14 +1,15 @@
 # Blocks
-A Javascript mini Framework to make Efficient, more readable tutorials easily by using simple html tags.
-
-Add 	blocks.css" and "blocks.js" to your html file,just like sample.htm file above.
-
-and then following feature will be addd to your html:
-
-- Create <b>Foldable hierarchial documents</b>:
-  folding and unfolding texts: a toggle button can be added inside any tag( h2 for example),and you can toggle its sibeling element.
-  you can create a heierarchial document by using this simple feature.
-
-- <b>More readable tags</b>:
-  for example h2 tags will have border and backcolor to make the document more readable
+A Javascript mini Framework to make Efficient Hierarcial, more readable tutorials easily by using simple html tags.
+Hierarcial Foldable Headings, means you can fold all H2 headings,then unfold a select h2 and see its h3 headings,
+then you can continue to dig into next level.
   
+# Usage
+Add 	blocks.css" and "blocks.js" to your html file,just like sample.htm file above.
+or you use cdn like this
+< link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/nhab/blocks@latest/blocks.css'>
+< script src='https://cdn.jsdelivr.net/gh/nhab/blocks@latest/blocks.js'></script >
+
+# Example
+https://nhab.github.io/programming/py/py.htm
+
+view the source code of the example to understand how easy is to use it.
