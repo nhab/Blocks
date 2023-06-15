@@ -30,7 +30,13 @@ Then set a blocks.js function to onload of the body tag.for example to make a 2 
  ```
 ## Make the content:
   After each heading,it should be just one div element.
-  
+```html
+<h2>headeing 1</h2>
+<div>
+  content
+</div>
+```
+
 # Example
 https://nhab.github.io/programming/py/py.htm
 
