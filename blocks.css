@@ -79,7 +79,7 @@ h2{
 	border: 3px solid #777777;
 	padding: 0.01em 1% ;
 	margin:3px;
-	display:flex;
+	display:block;
 	text-indent:0px;
 }
 h3{
@@ -89,12 +89,13 @@ h3{
 	border-color:#777799;
 	border-style: solid;
 	border-width:2px;
-	padding :1px;
+	padding:1px;
 	margin-top:2px;
 	margin-bottom:2px;
 	margin-left:1px;
 	margin-right:1px;
 	white-space:normal !important;
+	
 }	
 
 h4{
@@ -104,6 +105,7 @@ h4{
 	padding: 3px;
 	display: block;
 	border: 1px solid #999999;
+
 }	
 h5{
 	font-size:1.1em ! important;
@@ -113,6 +115,7 @@ h5{
 	margin-right:7px;
 	display: block;
 	border: 1px solid #bbbbbc;
+	
 }
 h7{
 	width: 100%;
@@ -130,6 +133,9 @@ h8{
 h9{
 	font-weight: 900;
 	color:#000077;
+}
+h2,h3,h4,h5,h6,h7{
+	max-width:95%;
 }
 bblue{
 	font-weight: 900;
