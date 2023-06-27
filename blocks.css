@@ -198,10 +198,13 @@ mark{
 	line-height: 1.7em;
 }
 .markerYellow{
-background-color:#ffff02;
+	background-color:#ffff02;
 }
 .markerGreen{
-background-color:#5ccd03;
+	background-color:#5ccd03;
+}
+.markerPink{
+	background-color:#f261c2;
 }
 .rtl{
     direction:rtl;
