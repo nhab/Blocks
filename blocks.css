@@ -197,7 +197,12 @@ mark{
   font-weight:700px;
 	line-height: 1.7em;
 }
-
+.markerYellow{
+background-color:#ffff02;
+}
+.markerGreen{
+background-color:#5ccd03;
+}
 .rtl{
     direction:rtl;
 }
