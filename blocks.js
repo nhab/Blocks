@@ -73,8 +73,8 @@ function ReplaceLtGt()
         s=$("code").eq(i)[0].innerHTML
         s=s.replaceAll("<"," < ")
         s=s.replaceAll("&lt;","<")
-        s=s.replaceAll("&gt;",">")
-        s=s.replaceAll("&amp;","&")
+        //s=s.replaceAll("&gt;",">")
+        //s=s.replaceAll("&amp;","&")
         
         $("code").eq(i).text( s)
     }
