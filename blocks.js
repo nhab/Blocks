@@ -79,8 +79,7 @@ function ReplaceLtGt() {
 }
 
 //n can be 3 or 4
-function AddToggleButtonsToH(n)
-{
+function AddToggleButtonsToH(n){
 	for(j=2;j<=n;j++)
 	{
 		var childDivs = document.getElementsByTagName('h'+j.toString());
@@ -96,5 +95,23 @@ function AddToggleButtonsToH(n)
 			para.setAttribute("class","toggleButton");
 			childDiv.prepend(para);
 		}
+	}
+}
+
+function FontSizeIncrease() {
+	var paragraphs = document.getElementsByTagName("p");
+	for (var i = 0; i < paragraphs.length; i++) {
+	  var fontSize = window.getComputedStyle(paragraphs[i], null).getPropertyValue("font-size");
+	  var currentSize = parseFloat(fontSize);
+	  paragraphs[i].style.fontSize = (currentSize + 1) + "px";
+	}
+}
+
+function FontSizeDecrease() {
+	var paragraphs = document.getElementsByTagName("p");
+	for (var i = 0; i < paragraphs.length; i++) {
+	  var fontSize = window.getComputedStyle(paragraphs[i], null).getPropertyValue("font-size");
+	  var currentSize = parseFloat(fontSize);
+	  paragraphs[i].style.fontSize = (currentSize -1) + "px";
 	}
 }
