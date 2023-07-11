@@ -1,5 +1,4 @@
-function toggle(el)
-{
+function toggle(el){
 	if(el.value=='-')
 	{
 		el.value='+';
@@ -12,8 +11,7 @@ function toggle(el)
 	}
 }
 
-function toggleAll(btn)
-{
+function toggleAll(btn){
 	if(btn.value=='-')
 		btn.value="+"
 	else
@@ -27,8 +25,7 @@ for (var i = 0; i < elements.length;i++) {
 
 }
 
-function AddToggleButtons()
-{
+function AddToggleButtons(){
 	var childDivs = document.getElementsByTagName('h2');
 
 	for( i=0; i< childDivs.length; i++ )
@@ -44,8 +41,7 @@ function AddToggleButtons()
 	}
 }
 
-function AddToggleButtonsToH2andH3()
-{
+function AddToggleButtonsToH2andH3(){
 	for(j=2;j<=3;j++)
 	{
 		var childDivs = document.getElementsByTagName('h'+j.toString());
@@ -64,8 +60,7 @@ function AddToggleButtonsToH2andH3()
 	}
 }
 
-function ReplaceLtGt()
-{
+function ReplaceLtGt(){
     len=$("code").length;
     for(i=0;i<len;i++)
     {
