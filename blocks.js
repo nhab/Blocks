@@ -66,8 +66,8 @@ function ReplaceLtGt(){
     {
 	    if($("code").eq(i)[0]==undefined) return;
         s=$("code").eq(i)[0].innerHTML
-        s=s.replaceAll("<"," < ")
-        s=s.replaceAll("&lt;","<")
+        //s=s.replaceAll("<"," < ")
+        s=s.replaceAll("<","&lt;")
         //s=s.replaceAll("&gt;",">")
         //s=s.replaceAll("&amp;","&")
         
