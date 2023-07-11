@@ -60,19 +60,22 @@ function AddToggleButtonsToH2andH3(){
 	}
 }
 
-function ReplaceLtGt(){
-    len=$("code").length;
-    for(i=0;i<len;i++)
-    {
-	    if($("code").eq(i)[0]==undefined) return;
-        s=$("code").eq(i)[0].innerHTML
-        //s=s.replaceAll("<"," < ")
-        s=s.replaceAll("<","&lt;")
-        //s=s.replaceAll("&gt;",">")
-        //s=s.replaceAll("&amp;","&")
-        
-        $("code").eq(i).text( s)
-    }
+// you can use the next function by 'then': ReplaceLtGt().then(f2);
+function ReplaceLtGt() {
+	return new Promise((resolve, reject) => {
+		len = $("code").length;
+		for (i = 0; i < len; i++) {
+			if ($("code").eq(i)[0] == undefined) return;
+			s = $("code").eq(i)[0].innerHTML
+			//s=s.replaceAll("<"," < ")
+			s = s.replaceAll("<", "&lt;")
+			//s=s.replaceAll("&gt;",">")
+			//s=s.replaceAll("&amp;","&")
+			
+			$("code").eq(i).innerHTML=s
+			resolve();
+		}
+	});
 }
 
 //n can be 3 or 4
