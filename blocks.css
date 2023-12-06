@@ -171,13 +171,15 @@ samp{
 
 code {
    /* display: inline-block;*/
-	white-space:unsset;
-     overflow-wrap: nowrap;
+    white-space:unsset;
+    overflow-wrap: nowrap;
     text-indent: 1%;
-     font-family: monospace;
+    font-family: monospace;
     padding-right:5px;
     text-indent: 1%;
+    font-size: 12px;
 }
+
 pre {
 	white-space: pre-wrap;       /* css-3 */
 	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -284,3 +286,12 @@ color:#00FFFF;
 .pre     { white-space: pre;}
 .preline { white-space: pre-line;}
 /*.box  .box50  .bordered .bold .bigbold .lighter .indented .preline*/
+
+.hljs-comment{
+  color:#eeffee;
+  background-color: #115511;
+  font-size: 16px;
+}
+.hljs-built_in, .hljs-keyword , .hljs-string{
+  font-size: 12px;
+}
