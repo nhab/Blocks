@@ -288,10 +288,12 @@ color:#00FFFF;
 /*.box  .box50  .bordered .bold .bigbold .lighter .indented .preline*/
 
 .hljs-comment{
-  color:#eeffee;
+  color:#eeffee !important;
   background-color: #115511;
   font-size: 20px;
 }
+
+
 .hljs-built_in, .hljs-keyword , .hljs-string, .hljs-title, .hljs-params{
   font-size: 20px;
 }
