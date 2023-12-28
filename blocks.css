@@ -289,11 +289,11 @@ color:#00FFFF;
 
 .hljs-comment{
   color:#eeffee !important;
-  background-color: #115511;
-  font-size: 20px;
+  background-color: #115511 !important;
+  font-size: 20px !important;
 }
 
 
 .hljs-built_in, .hljs-keyword , .hljs-string, .hljs-title, .hljs-params{
-  font-size: 20px;
+  font-size: 20px !important;
 }
